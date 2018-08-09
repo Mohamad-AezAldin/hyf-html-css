@@ -1,0 +1,136 @@
+/* start main */
+
+body{ 
+    color: #2C2F39; 
+    background-color: #ebebe0;
+    font-family: cursive;
+}
+
+.container{
+           width: 1170px;
+           margin:auto;
+           
+}
+
+h2{color: #C6322F ;}
+a{ text-decoration: none; color: inherit; }
+a:hover{ color: #252F31; font-weight: bold; }
+
+/*  end main  */
+
+/* start header */
+
+#header .head{ 
+    text-align: center; height: 300px;
+    background-color: #252f31;
+
+      
+}
+
+#header .head img { margin-top: 10px; width: 500px ; height: 300px ; } 
+
+    
+#header .navbar{ 
+                 background-color: #C6322F;
+                 color: #fff;
+                 overflow:hidden;
+    
+               }
+
+#header .navbar h2{ float: left; color: #252F31; font-weight:900;}
+#header .navbar h2 span {color: #fff;}
+
+#header .navbar ul{
+                    list-style: none;   
+                    padding-left: 0;
+                    overflow:  hidden;
+                    float: right;
+                        
+                  }
+
+#header .navbar ul li { float: left; padding: 10px;  }
+
+
+/* end header */
+
+/* start greeting */
+
+.greeting {overflow: hidden; padding-top: 30px; padding-bottom: 30px;}
+
+.greeting .welcome { float: left;  ; height: 120px; }
+
+/* end greeting */
+
+/* start menu  */
+
+.menu {
+    background-color: #ebebe0; 
+    overflow: hidden; 
+    margin-bottom: 50px;
+      }
+.menu .image1 { float: left; width: 40% ; }
+.menu .image1 img { width: 100% ;height: 100%; }
+.menu .info1 { float: right; width: 60% ; text-align: center;  }
+
+.menu .info1 h2 {
+          border-top: 2px solid gray;
+          border-bottom: 2px solid gray;
+          margin: 25px 25px 0 25px ;
+                }
+
+.menu .info1 .info2{
+            overflow: hidden;
+            margin: 20px;
+    
+                   }
+.menu .info1 .info2 img {width: 150px ; height: 100px;}
+.menu .info1 .info2 > div{ 
+    float: left ;
+    width: 50%;
+    min-height: 100px;
+    margin-bottom: 15px;
+
+}
+/*end menu  */
+
+
+
+/* start about us */ 
+
+#about{margin-bottom: 50px;}
+
+#about .story img{width: 100% ;height: 200px;}
+
+/* end about us */
+
+/* start contact */
+
+#contact{
+    margin-top: 40px;
+    background-color: #252f31;
+    padding-top: 15px; 
+    padding-bottom: 15px; 
+    overflow: hidden ;
+        }
+#contact .cont {float: left; width: 35% ; padding-top: 50px; }
+#contact .pic {float: left ; width: 65% ; }
+#contact .pic img { width: 150px; height: 100px; }
+#contact .pic > div { text-align: center ;
+                      float: left ;
+                      width: 33.33333%;
+                      min-height: 100px;
+                      margin-bottom: 15px; 
+                    }
+
+#contact .pic > div img { 
+                     float: left ;
+                     width: 85% ;
+                     margin: 10px ;
+                    }
+
+#contact h3 {color: white ;}
+#contact p { color: #6A6E71 ;}
+#contact span { color: #C6322F;}
+#contact h4 { color: white;}
+#contact a:hover {color: #C6322F ;}
+/* end contact */
