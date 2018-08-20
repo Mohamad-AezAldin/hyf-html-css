@@ -1,0 +1,145 @@
+/* universaal comments */
+
+*{box-sizing:border-box; }
+body{
+     margin: auto;
+     background-image:linear-gradient(to right, black, gray , black , gray , black );
+    }
+section{display: block; float:left; width: 100% }
+ul{list-style: none; padding-left: 10px; width: 100%}
+
+li {border: 1px dashed black ; 
+    border-radius: 5%; 
+    background-color: white ; 
+    padding: 0 5px 0 5px
+}
+li:hover{
+    color: rgb(44, 3, 3);
+    background-image:linear-gradient(to right, white , silver , white);
+    border: 2px solid rgb(20, 19, 19);
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: reverse; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-direction: normal;    
+}
+
+
+/* Standard syntax */
+@keyframes example {
+    0%   { left:0px; top:0px;}
+    25%  { left:10px; top:0px;}
+    50%  { left:10px; top:10px;}
+    75%  { left:0px; top:10px;}
+    100% { left:0px; top:0px;}
+}
+
+section h2 {
+    text-align:center; 
+    color: black; 
+    border-bottom: 3px double black;
+    border-top: 3px double black; 
+    padding: 10px; font-family: cursive; 
+    background-color: red
+}
+
+h3{color: red;  font-family: cursive; }
+
+/* end universaal style */
+
+/* start head */
+header {
+    display:flex;height: 150px;
+    width: 100%; color: red; 
+    align-items: center; justify-content: center;
+}
+h1{
+    font-size: 50px ;
+    font-family: cursive
+}
+
+svg{display: none;margin: 0}
+
+@media only screen and (min-width: 768px) {
+    header{height: 300px;}
+    h1{display: none;}
+    svg{display: inline;}
+}
+
+/*end head */
+
+/*start grid with float */
+
+
+    
+section:nth-child(1) ul li img { 
+    max-width: 60% ; max-height: 60%; 
+    padding: 0; margin: 0 0 5px 0
+}
+
+section:nth-child(1) ul li{
+    width: 48%; height: 375px;
+    float: left; overflow: auto ;
+    text-align: center; margin:1%
+}
+section:nth-child(1) ul li:nth-child(1){width:98%; }
+
+@media only screen and (min-width: 768px) and (max-width:1049px) {
+    section:nth-child(1) ul li{width: 31.33%; float: left; overflow: auto}
+    section:nth-child(1) ul li:nth-child(1){width:48%; float: left;}
+    section:nth-child(1) ul li:nth-child(2){width:48%; float: left;}
+}
+
+@media only screen and (min-width: 1050px){
+    section:nth-child(1) ul li{width: 23%; float: left; overflow: auto}
+    
+    section:nth-child(1) ul li:nth-child(1){width:48%; float: left;}
+}
+
+
+
+/*end grid with float */
+
+
+
+
+/* start grid with flex box */
+
+
+
+#grid-flex{
+    display: flex; flex-wrap: wrap;
+}
+
+
+#grid-flex .grid-item{
+   flex:50%; max-width: 48%; align-content: space-between;
+   overflow: auto; height: 375px; 
+   margin: 1%; text-align: center; 
+}
+#grid-flex .grid-item:nth-child(1){flex:100%; max-width: 100%;}
+section:nth-child(2) ul li img { max-width: 60% ;
+    max-height: 60%; 
+    padding: 0; margin: 0 0 5px 0; 
+} 
+
+@media only screen and (min-width: 768px) and (max-width:1049px){
+   #grid-flex .grid-item:nth-child(1){flex:50%; max-width: 48%;}
+   #grid-flex .grid-item:nth-child(2){flex:50%; max-width: 48%;}
+   #grid-flex .grid-item{
+       flex:33.33%; max-width: 31.33%;
+       
+   }
+
+}
+
+@media only screen and (min-width: 1050px){
+   #grid-flex .grid-item:nth-child(1){flex:50%; max-width: 48%;}
+   #grid-flex .grid-item{ flex:25%; max-width: 23%;}
+}    
+
+/*end grid with flex box */
+
+
