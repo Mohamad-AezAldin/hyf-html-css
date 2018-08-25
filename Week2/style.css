@@ -86,7 +86,7 @@ section:nth-child(1) ul li{
 }
 section:nth-child(1) ul li:nth-child(1){width:98%; }
 
-@media only screen and (min-width: 768px) and (max-width:1049px) {
+@media only screen and (min-width: 768px) {
     section:nth-child(1) ul li{width: 31.33%; float: left; overflow: auto}
     section:nth-child(1) ul li:nth-child(1){width:48%; float: left;}
     section:nth-child(1) ul li:nth-child(2){width:48%; float: left;}
@@ -116,7 +116,7 @@ section:nth-child(1) ul li:nth-child(1){width:98%; }
 
 #grid-flex .grid-item{
    flex:50%; max-width: 48%; align-content: space-between;
-   overflow: auto; height: 375px; 
+   overflow: auto;
    margin: 1%; text-align: center; 
 }
 #grid-flex .grid-item:nth-child(1){flex:100%; max-width: 100%;}
@@ -125,7 +125,7 @@ section:nth-child(2) ul li img { max-width: 60% ;
     padding: 0; margin: 0 0 5px 0; 
 } 
 
-@media only screen and (min-width: 768px) and (max-width:1049px){
+@media only screen and (min-width: 768px) {
    #grid-flex .grid-item:nth-child(1){flex:50%; max-width: 48%;}
    #grid-flex .grid-item:nth-child(2){flex:50%; max-width: 48%;}
    #grid-flex .grid-item{
