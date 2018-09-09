@@ -126,14 +126,16 @@ nav ul li{
 
 .meld .one{
     border: 2px solid steelblue;
-    padding: 20px;
+    padding: 20px 15px;
     margin: 10px 0 10px 0;
-    font: 40px bolder;
+    font: 30px bolder;
     text-align: center;
+    
+    
 }
 .one > span{
     display: block;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .last{
@@ -149,7 +151,8 @@ nav ul li{
 footer{
     display: block;
     margin-top: 30px;
-    text-align: center
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 footer > span {
