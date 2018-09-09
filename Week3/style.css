@@ -1,0 +1,225 @@
+*{box-sizing: border-box;}
+
+body{background-color: #f3f3f3}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch
+}
+header{
+    max-height: 200px;
+    text-align: center;
+}
+header img{
+    max-width: 100px;
+    max-height: 100px;
+    padding-bottom: 20px;
+}
+
+nav{
+    background-color: rgb(0, 132, 255);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+    padding: 10px;
+}
+
+nav .home{
+    display: flex;
+    justify-content: space-between;
+}
+nav .home img{width: 40px; height: 40px;}
+
+nav form{
+    display: flex; 
+    padding-top: 10px 
+}
+
+nav form input{width: 90%}
+nav form span{width: 10%}
+
+nav form img{width: 45px ; height: 35px; padding: 4px}
+nav ul{
+    display: none;
+    list-style: none;
+}
+nav ul li{
+    width: auto;
+    padding: 0 20px 0 40px;
+}
+
+
+.first{
+    background-image: url(https://www.rijksoverheid.nl/binaries/large/content/gallery/rijksoverheid/attentie-afbeeldingen/onderwerpen/s/schoolvakantie.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+.firstOne{display:flex; flex-direction: column}
+.first .firstOne ul{
+    background-color: white;
+    margin: 20px;
+    padding: 10px 30px;
+}
+.first .firstOne h5{
+    
+    margin-left: 20px;
+    color: white;
+}
+.first form{
+    display: none;
+    padding-left: 50px;
+}
+.first form img{width: 48px; height: 35px;}
+.first form input{height: 40px; max-width: 200;}
+.first form button{height: 40px; width:60px;}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    
+}
+.menu ul li{
+    padding: 10px;
+}
+.menu ul li h2{color: steelblue}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+.second > section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px
+}
+
+.nieuws{padding-left: 20px;}
+.nieuws h1{
+    border-top: 1px solid gray;
+    padding-top: 20px;
+    font-size: 30px;
+
+}
+.nieuws ul {
+   display: flex;
+   flex-direction: column;
+   list-style: none;
+   padding-left: 0;
+}
+.nieuws ul li{padding: 20px}
+.nieuws ul h2 , .nieuws>a {color: steelblue}
+
+.meld {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: center
+}
+
+.meld .one{
+    border: 2px solid steelblue;
+    padding: 20px 15px;
+    margin: 10px 0 10px 0;
+    font: 30px bolder;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.one > span{
+    display: block;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.last{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(16, 60, 128);
+    color: white;
+}
+
+
+footer{
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer > span {
+    border: 1px solid lightblue;
+    width: auto;
+    margin:0.5px
+}
+footer span:first-child{
+    border: none;
+}
+
+@media only screen and (min-width:480px){
+    .second , .nieuws ul , .meld {
+        flex-flow: row wrap;
+    }
+    .second > section , .nieuws ul li{
+        width: 50%
+    }
+    .meld .one{
+        width: 48%;
+        margin: 1%;
+    }  
+}
+
+@media only screen and (min-width:768px){
+    nav{
+        flex-direction: row;
+        align-items: center;
+    }
+    nav .home{ width: 30% }
+    
+    nav .home img , nav form {display: none;}
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        width:65%;
+    }
+
+    .first form{
+        display: flex;
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+
+    .menu ul , .last{
+        flex-flow: row wrap;
+    }
+    .menu ul li , .last h3 , .last table{
+        width: 50%
+    }
+    .last table{padding-left: 100px}
+    
+}
+
+@media only screen and (min-width:992px){
+    
+    .menu ul li{
+        width: 25%
+    }
+    .second > section , .nieuws ul li {
+        width: 33.33%
+    }
+    .meld{justify-content: start;}
+    .meld .one {width: 33.33%}
+}
